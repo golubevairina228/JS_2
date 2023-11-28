@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2. Калькулятор</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Калькулятор</h1>
+
+  <input type="text" id="input" readonly>
+  <br>
+  <button class="digit" onclick="appendToInput('1')">1</button>
+  <button class="digit" onclick="appendToInput('2')">2</button>
+  <button class="digit" onclick="appendToInput('3')">3</button>
+  <button class="operator" onclick="appendToInput('+')">+</button>
+  <br>
+  <button class="digit" onclick="appendToInput('4')">4</button>
+  <button class="digit" onclick="appendToInput('5')">5</button>
+  <button class="digit" onclick="appendToInput('6')">6</button>
+  <button class="operator" onclick="appendToInput('-')">-</button>
+  <br>
+  <button class="digit" onclick="appendToInput('7')">7</button>
+  <button class="digit" onclick="appendToInput('8')">8</button>
+  <button class="digit" onclick="appendToInput('9')">9</button>
+  <button class="operator" onclick="appendToInput('*')">*</button>
+  <br>
+  <button class="digit" onclick="appendToInput('0')">0</button>
+  <button class="clear" onclick="clearInput()">C</button>
+  <button class="calculate" onclick="calculate()">=</button>
+  <button class="operator" onclick="appendToInput('/')">/</button>
+  <br>
+
+  <div class="history">
+    <h2>История операций:</h2>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
